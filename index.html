@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   :root {
-    --bg: #f0f2ed;
-    --surface: #e6e9e0;
+    --canvas: #e9ece3;
+    --bg: #ffffff;
+    --surface: #f4f5ef;
     --ink: #16241d;
     --ink-soft: #3f4c43;
     --ink-faint: #6d7a70;
@@ -19,6 +20,7 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
+      --canvas: #060f0a;
       --bg: #101d17;
       --surface: #17281f;
       --ink: #f1efe4;
@@ -32,15 +34,16 @@
   }
 
   * { box-sizing: border-box; }
-  html { background: var(--bg); }
+  html { background: var(--canvas); }
   body {
-    background: var(--bg);
+    background: var(--canvas);
     color: var(--ink-soft);
     font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
     font-size: 16px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     margin: 0;
+    padding: 32px 16px;
   }
   h1, h2 {
     font-family: "Fraunces", Georgia, serif;
@@ -51,6 +54,9 @@
     max-width: 680px;
     margin: 0 auto;
     padding: 64px 24px 96px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 28px;
   }
 
   .brand {
@@ -219,7 +225,7 @@
         <circle cx="54" cy="42" r="11" fill="var(--mark-bg)"/>
       </svg>
     </div>
-    <div class="brand-name">GeoStamp Camera<span>Developed by Sam</span></div>
+    <div class="brand-name">GeoStamp Camera<span>Developed by Aaysha</span></div>
   </div>
 
   <h1>Privacy Policy</h1>
