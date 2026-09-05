@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeoStamp Camera Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f0f2ed;
+    --surface: #e6e9e0;
+    --ink: #16241d;
+    --ink-soft: #3f4c43;
+    --ink-faint: #6d7a70;
+    --line: rgba(22, 36, 29, 0.14);
+    --accent: #a9791a;
+    --mark-bg: #16241d;
+    --mark-fg: #c9a227;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101d17;
+      --surface: #17281f;
+      --ink: #f1efe4;
+      --ink-soft: #c9cfc5;
+      --ink-faint: #8fa094;
+      --line: rgba(241, 239, 228, 0.16);
+      --accent: #f2c94c;
+      --mark-bg: #f2c94c;
+      --mark-fg: #101d17;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    background: var(--bg);
+    color: var(--ink-soft);
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  h1, h2 {
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: var(--mark-bg);
+    display: grid;
+    place-items: center;
+    flex: none;
+  }
+  .mark svg { width: 20px; height: 20px; }
+  .brand-name {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .brand-name span {
+    display: block;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 5vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 0 10px;
+  }
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    letter-spacing: 0.02em;
+    margin: 0 0 28px;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 36px;
+  }
+
+  nav.toc {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 0 0 48px;
+    background: var(--surface);
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 24px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 6px; }
+  nav.toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc a::before {
+    content: attr(data-n) ". ";
+    color: var(--ink-faint);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+  }
+
+  section {
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 24px;
+  }
+  section:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 16px;
+  }
+  h2 .n {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  p { margin: 0 0 16px; max-width: 64ch; }
+  ul { margin: 0 0 16px; padding-left: 1.2em; max-width: 62ch; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  strong { color: var(--ink); font-weight: 600; }
+
+  .perms {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .perm {
+    background: var(--surface);
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) 1fr;
+    gap: 16px;
+    align-items: baseline;
+  }
+  .perm code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--ink);
+  }
+  .perm span {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+  }
+  footer a { color: var(--ink-faint); text-decoration: underline; }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+    .perm { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="mark">
+      <svg viewBox="0 0 108 108" fill="none">
+        <path fill="var(--mark-fg)" d="M54,30 C42,30 32,40 32,52 C32,68 54,86 54,86 C54,86 76,68 76,52 C76,40 66,30 54,30 Z"/>
+        <circle cx="54" cy="42" r="11" fill="var(--mark-bg)"/>
+      </svg>
+    </div>
+    <div class="brand-name">GeoStamp Camera<span>Developed by Sam</span></div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective September 5, 2026</p>
+  <p class="lede">
+    GeoStamp Camera is a camera app that stamps each photo with the time, GPS
+    coordinates, and address where it was taken. This page explains exactly
+    what the app accesses, what it does with it, and what never leaves your
+    phone.
+  </p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li data-n="1"><a href="#collect">Information we collect</a></li>
+      <li data-n="2"><a href="#permissions">Permissions at a glance</a></li>
+      <li data-n="3"><a href="#use">How it's used</a></li>
+      <li data-n="4"><a href="#third-party">Third-party services</a></li>
+      <li data-n="5"><a href="#storage">Storage &amp; retention</a></li>
+      <li data-n="6"><a href="#sharing">Data sharing &amp; sale</a></li>
+      <li data-n="7"><a href="#children">Children's privacy</a></li>
+      <li data-n="8"><a href="#choices">Your choices</a></li>
+      <li data-n="9"><a href="#changes">Changes to this policy</a></li>
+      <li data-n="10"><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="collect">
+    <h2><span class="n">01</span>Information we collect</h2>
+    <p>GeoStamp Camera collects only what it needs to stamp your photos:</p>
+    <ul>
+      <li><strong>Photos you take</strong> through the app's camera screen.</li>
+      <li><strong>Precise location</strong> (GPS) at the moment you shoot, used to
+        print coordinates on the photo and center the map thumbnail.</li>
+      <li><strong>Reverse-geocoded address</strong> — a human-readable street
+        address resolved from those coordinates.</li>
+    </ul>
+    <p>The app does not collect your name, contacts, browsing activity, or any
+      identifier tied to you as a person. There is no account or sign-in.</p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="n">02</span>Permissions at a glance</h2>
+    <div class="perms">
+      <div class="perm"><code>CAMERA</code><span>Lets you take the photo. No image leaves your device except the one you choose to save or share.</span></div>
+      <div class="perm"><code>ACCESS_FINE_LOCATION</code><span>Precise GPS fix, used to stamp exact coordinates and center the map thumbnail.</span></div>
+      <div class="perm"><code>ACCESS_COARSE_LOCATION</code><span>Fallback location source on devices/situations where a precise fix isn't available.</span></div>
+      <div class="perm"><code>INTERNET</code><span>Needed only to fetch the small map thumbnail image and to resolve the street address — see Section 4.</span></div>
+    </div>
+  </section>
+
+  <section id="use">
+    <h2><span class="n">03</span>How it's used</h2>
+    <p>Location and address data are used for exactly one purpose: printing
+      them, along with the timestamp, onto the photo you take, and writing
+      the GPS coordinates into that photo's EXIF metadata so your gallery app
+      can also show where it was taken. None of this is used for advertising,
+      profiling, or analytics — GeoStamp Camera contains no ad SDK and no
+      analytics SDK.</p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="n">04</span>Third-party services</h2>
+    <p>Two requests leave your device, both scoped to the single photo you're
+      about to take:</p>
+    <ul>
+      <li><strong>Google Static Maps API</strong> — receives only the latitude
+        and longitude of your current position, to render the small map
+        thumbnail shown in the app and stamped onto the photo. See
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Android's on-device Geocoder</strong> — resolves coordinates
+        into a street address using your phone's own geocoding service
+        (backed by Google Play services on most devices), governed by the
+        same Google privacy policy above.</li>
+    </ul>
+    <p>Neither call includes your name, device identifiers beyond what the
+      Android OS attaches to any network request, or any other app data.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="n">05</span>Storage &amp; retention</h2>
+    <p>Stamped photos are saved directly to your device's photo library
+      (MediaStore) — the same place every photo from your regular camera app
+      goes. GeoStamp Camera has no backend server and no cloud storage of its
+      own; nothing about your photos, locations, or addresses is retained by
+      us anywhere, at any time.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="n">06</span>Data sharing &amp; sale</h2>
+    <p>We do not sell, rent, or trade your data. We do not share it with
+      anyone except the two Google services described in Section 4, which
+      exist to render the map thumbnail and address text inside your own
+      photo.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="n">07</span>Children's privacy</h2>
+    <p>GeoStamp Camera is not directed at children under 13, and we do not
+      knowingly collect data from them.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="n">08</span>Your choices</h2>
+    <ul>
+      <li>Revoke camera or location access anytime in
+        <strong>Settings → Apps → GeoStamp Camera → Permissions</strong>.</li>
+      <li>Delete any stamped photo the same way you'd delete any other photo
+        in your gallery.</li>
+      <li>Uninstalling the app removes everything it stored locally — there's
+        no server-side account to separately delete.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="n">09</span>Changes to this policy</h2>
+    <p>If this policy changes, the effective date at the top of this page
+      will be updated. Material changes will also be reflected in the app's
+      Play Store listing.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="n">10</span>Contact</h2>
+    <p>Questions about this policy or how GeoStamp Camera handles data can be
+      sent to <a href="mailto:rohilla.sam@gmail.com">rohilla.sam@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    GeoStamp Camera — this privacy policy applies to the GeoStamp Camera
+    Android app only.
+  </footer>
+</div>
+</body>
+</html>
