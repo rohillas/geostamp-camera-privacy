@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GeoStamp Camera Privacy Policy</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
   :root {
     --canvas: #e9ece3;
@@ -46,7 +46,7 @@
     padding: 32px 16px;
   }
   h1, h2 {
-    font-family: "Fraunces", Georgia, serif;
+    font-family: "Lora", Georgia, serif;
     color: var(--ink);
     text-wrap: balance;
   }
@@ -56,7 +56,7 @@
     padding: 64px 24px 96px;
     background: var(--bg);
     border: 1px solid var(--line);
-    border-radius: 28px;
+    border-radius: 12px;
   }
 
   .brand {
@@ -76,7 +76,7 @@
   }
   .mark svg { width: 20px; height: 20px; }
   .brand-name {
-    font-family: "Fraunces", Georgia, serif;
+    font-family: "Lora", Georgia, serif;
     font-weight: 600;
     font-size: 1.05rem;
     color: var(--ink);
@@ -158,15 +158,24 @@
     font-size: 1.3rem;
     font-weight: 600;
     display: flex;
-    align-items: baseline;
-    gap: 10px;
+    align-items: center;
+    gap: 14px;
     margin: 0 0 16px;
   }
   h2 .n {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2em;
+    height: 2.2em;
+    flex: none;
+    border-radius: 8px;
+    background: var(--mark-bg);
+    color: var(--mark-fg);
     font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
   }
   p { margin: 0 0 16px; max-width: 64ch; }
   ul { margin: 0 0 16px; padding-left: 1.2em; max-width: 62ch; }
