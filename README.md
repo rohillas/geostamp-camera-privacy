@@ -1,6 +1,6 @@
-# GeoStamp Camera — Privacy Policy
+# Geo Stamping — Privacy Policy
 
-This repo hosts the public privacy policy for the GeoStamp Camera Android
+This repo hosts the public privacy policy for the Geo Stamping Android
 app, served via GitHub Pages, so it has a stable, self-hosted URL for the
 Google Play Console listing (App content → Privacy policy).
 
